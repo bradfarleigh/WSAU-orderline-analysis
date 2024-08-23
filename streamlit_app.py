@@ -141,8 +141,7 @@ def analyse_first_and_repeat_purchases(df):
 
 def main():
     st.title("WatchStraps.com.au Order Analysis")
-    
-    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    uploaded_file = st.file_uploader("Download the 'orderlines' file from Maropost", type="csv")
     
     if uploaded_file is not None:
         df = load_data(uploaded_file)
